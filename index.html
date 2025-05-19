@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Медиа-категории</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>Медиа-категории</h1>
+
+    <div class="tabs">
+      <button class="tab-btn active" data-category="movies">🎬 Фильмы</button>
+      <button class="tab-btn" data-category="books">📚 Книги</button>
+      <button class="tab-btn" data-category="music">🎵 Музыка</button>
+    </div>
+
+    <div class="search-filter">
+      <input id="searchInput" type="text" placeholder="Поиск по названию или описанию..." />
+      <div id="filterContainer" class="filters"></div>
+    </div>
+
+    <div id="mainView" class="item-list"></div>
+
+    <div id="detailView" class="detail-view hidden">
+      <button id="backBtn" class="back-btn">← Назад</button>
+      <div id="detailContent"></div>
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
